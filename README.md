@@ -19,4 +19,4 @@ Install and run:
     python3 FaceDetectionBasics.py
 ```
 
-video download from: https://www.youtube.com/watch?v=-CeLBsqU6qw
+video downloaded from: https://www.youtube.com/watch?v=-CeLBsqU6qw
