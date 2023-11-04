@@ -13,7 +13,7 @@ Install and run:
 
 ```console
     git clone https://github.com/AdrianCobo/FaceDetection.git
-    cd PoseEstimation
+    cd FaceDetection
     pip install opencv-python
     sudo pip install mediapipe
     python3 FaceDetectionBasics.py
