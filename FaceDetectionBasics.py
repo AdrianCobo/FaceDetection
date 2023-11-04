@@ -15,6 +15,9 @@ faceDetection = mpFaceDetection.FaceDetection(min_detection_confidence=0.9)
 while cap.isOpened():
     success, img = cap.read()
 
+    if not success:
+        break
+
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     results = faceDetection.process(imgRGB)
 
@@ -43,6 +46,8 @@ while cap.isOpened():
     pTime = cTime
     cv2.putText(img, f'FPS:{int(fps)}', (20, 70), cv2.FONT_HERSHEY_PLAIN,
                 3, (0, 255, 0), 2)
+    
+    img = cv2.resize(img,(600,800))
     cv2.imshow("Image", img)
     cv2.waitKey(10)
     # exit pressing q
